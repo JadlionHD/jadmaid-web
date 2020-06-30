@@ -99,7 +99,7 @@ function cloudGo(obj) {
         clouds[clouds.length] = c;
         resetCloud(c, true);
         moveCloud(c);
-        setInterval('moveAllClouds();', 200);
+        setInterval('moveAllClouds();', 50);
     }
 }
 function titleGo(objectID, mobile) {
