@@ -21,11 +21,29 @@ body {
 
 h1 {
 	text-align: center;
+   -webkit-animation-name: Floatingx;
+   -webkit-animation-duration: 4s;
+   -webkit-animation-iteration-count: infinite;
+   -webkit-animation-timing-function: ease-in-out;
+   -moz-animation-name: Floating;
+   -moz-animation-duration: 4s;
+   -moz-animation-iteration-count: infinite;
+   -moz-animation-timing-function: ease-in-out;
 }
 
+#profile {
+   -webkit-animation-name: Floatingx;
+   -webkit-animation-duration: 4s;
+   -webkit-animation-iteration-count: infinite;
+   -webkit-animation-timing-function: ease-in-out;
+   -moz-animation-name: Floating;
+   -moz-animation-duration: 4s;
+   -moz-animation-iteration-count: infinite;
+   -moz-animation-timing-function: ease-in-out;
+}
 
 #profile img {
-	border: 5px solid #666;
+	border: 5px solid;
 	width: 150px;
 	border-radius: 50%;
     display: block;
@@ -36,14 +54,81 @@ h1 {
 #profile p {
 	text-align: center;
 	font-size: 25px;
+	color: transparent;
+    background: linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: animatedgradient 3s ease-in-out infinite;
+    background-size: 400% 100%;
+}
+
+
+
+               
+@-webkit-keyframes Floatingx {
+	from {
+    	-webkit-transform: translate(0, 0px);
+    }
+
+    65% {
+        -webkit-transform: translate(0, 15px);
+    }
+
+    to {
+        -webkit-transform: translate(0, -0px);
+    }
+}
+
+@-moz-keyframes Floating {
+	from {
+    	-moz-transform: translate(0, 0px);
+    }
+
+    65% {
+    	-moz-transform: translate(0, 15px);
+    }
+
+    to {
+    	-moz-transform: translate(0, -0px);
+    }
+
 }
 
 #links {
 	text-align: center;
+   -webkit-animation-name: Floatingx;
+   -webkit-animation-duration: 4s;
+   -webkit-animation-iteration-count: infinite;
+   -webkit-animation-timing-function: ease-in-out;
+   -moz-animation-name: Floating;
+   -moz-animation-duration: 4s;
+   -moz-animation-iteration-count: infinite;
+   -moz-animation-timing-function: ease-in-out;
 }
 
 h3 {
 	font-size: 30px;
+   -webkit-animation-name: Floatingx;
+   -webkit-animation-duration: 4s;
+   -webkit-animation-iteration-count: infinite;
+   -webkit-animation-timing-function: ease-in-out;
+   -moz-animation-name: Floating;
+   -moz-animation-duration: 4s;
+   -moz-animation-iteration-count: infinite;
+   -moz-animation-timing-function: ease-in-out;
+
+}
+
+.container p {
+   -webkit-animation-name: Floatingx;
+   -webkit-animation-duration: 4s;
+   -webkit-animation-iteration-count: infinite;
+   -webkit-animation-timing-function: ease-in-out;
+   -moz-animation-name: Floating;
+   -moz-animation-duration: 4s;
+   -moz-animation-iteration-count: infinite;
+   -moz-animation-timing-function: ease-in-out;
 }
 
 .cloud {
@@ -56,4 +141,17 @@ h3 {
     background-image: url(../img/cloud.png);
     background-size: 100% 100%;
     z-index: -9
+}
+
+
+@keyframes animatedgradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
